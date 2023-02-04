@@ -4,12 +4,11 @@ const { ccclass, property } = _decorator;
 @ccclass('Launch')
 export class Launch extends Component {
 
-    @property({type: Label, visible: true})
+    @property({type: Label})
     private _label: Label | null = null;
 
     start() {
         console.info("Start LaunchScene");
-        this._label.string = "点击开始游戏";
     }
 
     private handleClickButton(event: EventMouse) {

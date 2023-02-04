@@ -9,7 +9,6 @@ export class Launch extends Component {
 
     start() {
         console.info("Start LaunchScene");
-        this._label.string = "点击开始游戏";
     }
 
     private handleClickButton(event: EventMouse) {

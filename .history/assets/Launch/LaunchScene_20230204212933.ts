@@ -1,20 +1,17 @@
-import { _decorator, Component, Node, EventMouse, Label } from 'cc';
+import { _decorator, Component, Node, EventMouse } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('Launch')
 export class Launch extends Component {
 
-    @property({type: Label, visible: true})
-    private _label: Label | null = null;
+    private _label
 
     start() {
         console.info("Start LaunchScene");
-        this._label.string = "点击开始游戏";
     }
 
     private handleClickButton(event: EventMouse) {
         console.info("Hello world!");
-        this._label.string = "你好, 欢迎进入";
     }
 }
 
